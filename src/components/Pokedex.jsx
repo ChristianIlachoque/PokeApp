@@ -7,18 +7,28 @@ export const Pokedex = ({}) => {
   const navigate = useNavigate();
   const pokemonName = location.pathname.split("/")[2];
   const [pokemon, setPokemon] = useState({});
+  const [isLoading, setIsLoading] = useState(true);
   const pokemonFetch = () => {
     fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
       .then((res) => res.json())
       .then((data) => {
         setPokemon(data);
-        console.log(data);
-        console.log(data.sprites);
+        setIsLoading(false);
       });
   };
   useEffect(() => {
     pokemonFetch();
   }, []);
+
+  if (isLoading)
+    return (
+      <div
+        className="container d-flex justify-content-center"
+        style={{ height: "100vh" }}
+      >
+        <h1 className="align-self-center">Loading...</h1>
+      </div>
+    );
   return (
     <div className="d-flex flex-column container col-6 mt-5 pokemon-card">
       <div

@@ -91,3 +91,47 @@ button:hover {
   top: 60%;
   left: 40%;
 }
+
+@media (max-width: 768px) {
+  h1,
+  h5 {
+    font-size: 100%;
+  }
+  .img-pikachu {
+    top: 60%;
+    left: 30%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  h1,
+  h5 {
+    font-size: 138%;
+  }
+  .img-pikachu {
+    top: 45%;
+    left: 30%;
+  }
+}
+
+@media (min-width: 992px) {
+  h1,
+  h5 {
+    font-size: 138%;
+  }
+  .img-pikachu {
+    top: 40%;
+    left: 30%;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1,
+  h5 {
+    font-size: 180%;
+  }
+  .img-pikachu {
+    top: -10%;
+    left: 50%;
+  }
+}

@@ -5,7 +5,7 @@ import "./Home.css";
 export const Home = () => {
   const navigate = useNavigate();
   return (
-    <>
+    <div className="landing">
       <div className="landing-body">
         <div className="landing-description">
           <h1>Pokémon Go</h1>
@@ -22,6 +22,6 @@ export const Home = () => {
       </div>
       <img src={pikachu} alt="pikachu" className="img-pikachu" />
       <div className="landing-footer"></div>
-    </>
+    </div>
   );
 };
