@@ -1,0 +1,42 @@
+.pokegrid-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+  transition-duration: 0.2s;
+}
+
+/* Estilos para dispositivos pequeños (menos de 768px de ancho) */
+@media (max-width: 767.98px) {
+  .pokemon-card {
+    width: 350px;
+  }
+  .pokemon-title {
+    font-size: 10px; /* Ajusta el tamaño del título en dispositivos pequeños */
+  }
+
+  .pokemon-subtitle {
+    font-size: 8px; /* Ajusta el tamaño del texto en dispositivos pequeños */
+  }
+
+  .pokemon-description {
+    font-size: 7px; /* Ajusta el tamaño del texto en dispositivos pequeños */
+  }
+
+  .pokemon-header {
+    font-size: 12px;
+  }
+
+  .pokemon-card-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pokemon-card-img {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+  }
+
+  .pokemon-card-types {
+    justify-content: center;
+    padding-bottom: 5px;
+  }
+}
